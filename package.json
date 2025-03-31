@@ -1,0 +1,39 @@
+{
+  "name": "wireframe",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000S\u0000y\u0000s\u0000t\u0000e\u0000m\u0000-\u0000o\u0000p\u0000e\u0000n\u0000-\u0000m\u0000a\u0000l\u0000l\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Project-AuroraSys/System-open-mall.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Project-AuroraSys/System-open-mall/issues"
+  },
+  "homepage": "https://github.com/Project-AuroraSys/System-open-mall#readme",
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.0.17",
+    "next": "^15.2.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.14",
+    "@types/react": "^19.0.12",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.0.17",
+    "typescript": "^5.8.2"
+  }
+}
