@@ -1,6 +1,9 @@
 import Head from "next/head";
+import Header from "../components/header_home"; // ⬅️ Certifique-se do caminho correto
+import HeroHome from "../components/section_hero_home"; // ⬅️ Certifique-se do caminho correto
 import ShoppingSearch from "../components/section_search"; // ⬅️ Certifique-se do caminho correto
 import StoreSpaces from "../components/spaces_home"; // ⬅️ Certifique-se do caminho correto
+import AboutHome from "../components/about_home"; // ⬅️ Certifique-se do caminho correto
 
 export default function Home() {
   return (
@@ -14,45 +17,19 @@ export default function Home() {
       </Head>
 
       {/* Cabeçalho Principal */}
-      <header className="fixed w-full bg-white bg-opacity-90 shadow-md p-4 flex justify-between items-center z-50">
-        <div className="text-2xl font-bold text-gray-800">Open Mall</div>
-        <nav className="space-x-6">
-          <a href="#home" className="text-gray-700 hover:text-green-500">Início</a>
-          <a href="#about" className="text-gray-700 hover:text-green-500">Sobre</a>
-          <a href="#services" className="text-gray-700 hover:text-green-500">Serviços</a>
-          <a href="#shoppings" className="text-gray-700 hover:text-green-500">Shoppings</a>
-          <a href="#stores" className="text-gray-700 hover:text-green-500">Lojas</a>
-          <a href="#events" className="text-gray-700 hover:text-green-500">Eventos</a>
-          <a href="#contact" className="text-gray-700 hover:text-green-500">Contato</a>
-          <a href="#login" className="text-gray-700 hover:text-green-500">Entrar</a>
-        </nav>
-      </header>
+      <Header /> {/* ⬅️ Aqui estamos incluindo o cabeçalho */}
 
       {/* Seção Hero */}
-      <section
-        id="home"
-        className="hero"
-        style={{ backgroundImage: "url('/images/gallerycenter.jpeg')" }}
-      >
-        <div className="hero-overlay"></div>
-        <div className="hero-content">
-          <h1 className="text-5xl font-extrabold leading-tight">
-            O Seu Shopping Online, <span className="text-green-400">Reinventado</span>
-          </h1>
-          <p className="mt-4 text-lg">
-            Descubra lojas incríveis, ofertas exclusivas e uma nova forma de comprar e se conectar.
-          </p>
-          <a href="#stores" className="cta-button">
-            Explorar Agora
-          </a>
-        </div>
-      </section>
+      <HeroHome /> {/* ⬅️ Aqui estamos incluindo a seção hero */}
 
       {/* 🏢 Seção de Pesquisa de Shoppings */}
       <ShoppingSearch /> {/* ⬅️ Aqui estamos incluindo a seção de pesquisa */}
 
       {/* 🏬 Seção de Espaços Comerciais */}
       <StoreSpaces /> {/* ⬅️ Aqui estamos incluindo a seção de espaços comerciais */}
+        
+      {/* Sobre o Open Mall */}
+      <AboutHome /> {/* ⬅️ Aqui estamos incluindo a seção sobre o Open Mall */}
 
       {/* Rodapé */}
       <footer id="contact" className="bg-gray-900 text-white text-center p-8">
