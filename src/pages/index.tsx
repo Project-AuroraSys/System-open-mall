@@ -4,6 +4,7 @@ import HeroHome from "../components/section_hero_home"; // ⬅️ Certifique-se 
 import ShoppingSearch from "../components/section_search"; // ⬅️ Certifique-se do caminho correto
 import StoreSpaces from "../components/spaces_home"; // ⬅️ Certifique-se do caminho correto
 import AboutHome from "../components/about_home"; // ⬅️ Certifique-se do caminho correto
+import HowItWorks from "../components/sectionexplanation"; // ⬅️ Certifique-se do caminho correto
 
 export default function Home() {
   return (
@@ -21,6 +22,9 @@ export default function Home() {
 
       {/* Seção Hero */}
       <HeroHome /> {/* ⬅️ Aqui estamos incluindo a seção hero */}
+      
+      {/* Como Funciona? */}
+      <HowItWorks /> {/* ⬅️ Aqui estamos incluindo a seção de como funciona */}
 
       {/* 🏢 Seção de Pesquisa de Shoppings */}
       <ShoppingSearch /> {/* ⬅️ Aqui estamos incluindo a seção de pesquisa */}
