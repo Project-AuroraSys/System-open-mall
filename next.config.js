@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    reactStrictMode: true,
-    experimental: {
-      appDir: true, // Ativar suporte ao diretório "app"
+    output: 'export',  // Adicione isso
+    images: {
+      unoptimized: true,  // Desativa a otimização de imagens
     },
   };
   
-  export default nextConfig;
+  module.exports = nextConfig;
   
